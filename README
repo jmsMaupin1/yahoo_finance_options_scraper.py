@@ -1,0 +1,15 @@
+Initial-setup commands:
+    git clone <repository-url> <local-repository-directory>
+    cd <local-repository-directory>
+    python3 -m venv .
+    source bin/activate
+    pip install -U pip
+    pip install -r requirements
+    deactivate
+    cd -
+Post-setup-run commands:
+    cd <local-repository-directory>
+    source bin/activate
+    python scraper.py
+    deactivate
+    cd -
