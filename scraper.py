@@ -32,6 +32,7 @@ def get_html(timestamp=None):
         wait.until(EC.visibility_of_element_located((By.TAG_NAME, 'select')))
         return browser.page_source
 
+    browser.quit()
     return requests.get(data_url.format(timestamp)).content
 
 
